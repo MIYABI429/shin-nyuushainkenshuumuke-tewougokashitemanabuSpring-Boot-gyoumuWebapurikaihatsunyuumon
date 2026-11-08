@@ -4,6 +4,11 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper
-	namespace="">
-
+	namespace="com.example.MonthlyMVC.repository.MansionRepository">
+	<select id="selectAll" resultType="Mansion">
+	<![CDATA[
+	SELECT id,name,address,monthly_price AS monthlyPrice ,building_date AS buildingDate
+,image_path AS imagePath,data_flag AS dataFlag FROM mansion
+  	]]>
+	</select>
 </mapper>
