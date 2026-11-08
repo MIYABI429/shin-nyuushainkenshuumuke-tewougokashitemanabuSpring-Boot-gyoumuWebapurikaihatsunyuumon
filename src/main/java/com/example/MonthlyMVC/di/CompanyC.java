@@ -1,8 +1,5 @@
 package com.example.MonthlyMVC.di;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class CompanyC implements DBConnection {
 	@Override
 	public void connention() {
